@@ -4,8 +4,7 @@ import PSCounter from "./PureScript/output/Counter";
 
 class App extends Component {
   render() {
-    const state = { ...this.props };
-    const Counter = PSCounter.toReact(state)();
+    const Counter = PSCounter.toReact(this.props)();
     return (
       <div className="App">
         <Counter />
